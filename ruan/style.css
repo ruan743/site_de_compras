@@ -1,6 +1,6 @@
 header{
     height: 100px;
-    background: linear-gradient(90deg, rgba(59, 96, 184, 1) 0%, rgba(142, 61, 196, 1) 100%);
+    background: linear-gradient(90deg, rgb(137, 0, 228)0%, rgb(255, 255, 255) 100%);
     display: flex;
     align-items: center;
 
@@ -57,11 +57,13 @@ body{
     }
 }
 .vitrine_produtos{
-    background-color: rgba(65, 19, 124, 0.74);
+    background-color: rgba(117, 72, 175, 0.87);
     height: 310px;
     width: 1950px;
+    display: flex;
+    gap: 15px;
     .card{
-        background-color: rgb(91, 72, 177);
+        background-color: rgb(255, 255, 255);
         height: 290px;
         width: 200px;
         border-radius: 20px;
@@ -93,6 +95,49 @@ body{
             color: rgba(0, 0, 0, 0.815);
         }
     }
+    .nome_produto{
+        height: 38px;
+        width: 166px;
+        overflow: hidden;
+
+    }
 
     
+}
+.left_button{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(137, 0, 228);
+    border-radius: 30px;
+     transform: rotate(180deg);
+    svg{
+        width: 55px;
+        height: 55px;
+        g{
+            fill: rgb(0, 0, 0);
+        }
+    }
+
+}
+.rigth_button{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+   
+   
+    svg{
+        width: 55px;
+        height: 55px;
+        g{
+            fill: rgb(0, 0, 0);
+        }
+    }
+
 }
