@@ -26,6 +26,10 @@ header{
 
 body{
     margin: 0px;
+    width: 1290px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .barra_pesquisa{
@@ -59,9 +63,10 @@ body{
 .vitrine_produtos{
     background-color: rgba(117, 72, 175, 0.87);
     height: 310px;
-    width: 1950px;
+    width: 100%;
     display: flex;
     gap: 15px;
+    background: linear-gradient(90deg, rgb(95, 12, 151)0%, rgb(216, 208, 208) 100%);
     .card{
         background-color: rgb(255, 255, 255);
         height: 290px;
@@ -89,10 +94,16 @@ body{
         .frete{
             width: 100%;
             font-size: bold;
+            color: rgba(74, 153, 21, 0.685);
         }
         a{
             text-decoration: none; 
             color: rgba(0, 0, 0, 0.815);
+        }
+    }
+    .card:hover{
+        a{
+            color: rgb(80, 166, 241);
         }
     }
     .nome_produto{
@@ -140,4 +151,14 @@ body{
         }
     }
 
+}
+.box{
+    overflow: hidden;
+}
+.botoes{
+   
+    margin-top: -200px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
 }

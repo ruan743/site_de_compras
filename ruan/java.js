@@ -1,26 +1,13 @@
-function notas(){
-    let resultado = document.getElementById("resultado");
-    let alunos= ["ana", "pedro", "rebeca", "liz", "noah"];
-    let faltas = [15, 5, -1, 0, 2];
+let btn_esquerda = document.getElementById("esquerda");
+let btn_direita = document.getElementById("dirita");
+let vitrine = document.getElementById("vitrine");
 
-    resultado.innerHTML = "";
-    for (let i = 0; i <alunos.length; i++) { 
-        if (faltas[i] >= 0 && faltas[i] <= 5) {
-            resultado.innerHTML += alunos[i] + ": " + faltas[i] + " faltas aprovado <br>";
-        }
-        if (faltas[i] > 5 && faltas[i] <= 10) {
-            resultado.innerHTML += alunos[i] + ": " + faltas[i] + " faltas, esta de recuperação <br>";
-        }
-        if (faltas[i] > 10) {
-            resultado.innerHTML += alunos[i] + ": " + faltas[i] + " faltas reprovado <br>";
-        }
-        if (faltas[i] < 0) {
-            resultado.innerHTML += alunos[i] + ": " + faltas[i] + " faltas invalidas <br>";
-        }
-         
-        
-            
-    } 
-    
-   
+function arrasta_esquerda(){
+    vitrine.style.transform = 'translatex(0px)'
+    vitrine.style.transition = "1.0s";
+
+}
+function arrasta_direita(){
+    vitrine.style.transform = 'translatex(-450px)'
+    vitrine.style.transition = "1.0s";
 }
