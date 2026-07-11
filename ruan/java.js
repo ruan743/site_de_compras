@@ -1,5 +1,5 @@
 let btn_esquerda = document.getElementById("esquerda");
-let btn_direita = document.getElementById("dirita");
+let btn_direita = document.getElementById("direita");
 let vitrine = document.getElementById("vitrine");
 
 function arrasta_esquerda(){
