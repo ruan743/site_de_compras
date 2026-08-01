@@ -1,30 +1,19 @@
 header{
     height: 100px;
+    background: linear-gradient(90deg, rgb(137, 0, 228)0%, rgb(255, 255, 255) 100%);
     background: linear-gradient(90deg, rgb(137, 0, 228)0%, rgb(216, 37, 37) 100%);
     display: flex;
     align-items: center;
 
-    .logo{
-        transition: 0.3s;
-        height: 70px;
-        width: 70px;
-        margin: 15px;
-        g{
-            fill: rgb(255, 255, 255);
-        }
-    }
-    .logo:hover{
-        transform: scale(1.1);
-        transition: 0.5s;
-
-        g{
-            fill:rgb(87, 170, 244)        
-        }
-    }
-    
+-25,13 +25,15 header
 }
 
 body{
+    margin: 0px;
+    width: 1290px;
+    display: flex;
+    flex-direction: column;
+    
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
@@ -37,121 +26,31 @@ body{
 .barra_pesquisa{
     img{
         height: 15px;
-        width: 15px;
-    }
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 40px;
-    width: 450px;
-    background-color: rgb(255, 255, 255);   
-    color: rgb(236, 236, 236);
-    border-radius: 2px;
-    margin-left: 200px;
-
-    input{
-        height: 35px;
-        width: 400px;
-        background: none;
-        border: none;
-    }
-
-    button{
-        background: none;
-        border: none;
+-61,12 +63,11body
     }
 }
 .vitrine_produtos{
+    background-color: rgba(117, 72, 175, 0.87);
     height: 310px;
     width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    background: linear-gradient(90deg, rgb(95, 12, 151)0%, rgb(216, 208, 208) 100%);
+    gap: 20px;}
     
     .card{
         background-color: rgb(255, 255, 255);
         height: 290px;
-        width: 200px;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 10px;
-
-        img{
-            height: 120px;
-        }
-
-        h2{
-            font-size: 15px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .price{
-            width: 100%;
-            span{
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            }
-        }
-        .frete{
-            width: 100%;
-            font-size: bold;
-            color: rgba(74, 153, 21, 0.685);
-        }
-        a{
-            text-decoration: none; 
-            color: rgba(0, 0, 0, 0.815);
-        }
-    }
-    .card:hover{
-        a{
-            color: rgb(80, 166, 241);
-        }
-    }
-    .nome_produto{
-        height: 38px;
-        width: 166px;
-        overflow: hidden;
-
-    }
-
-    
-}
-.left_button{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(137, 0, 228);
-    border-radius: 30px;
-     transform: rotate(180deg);
-    svg{
-        width: 55px;
-        height: 55px;
-        g{
-            fill: rgb(0, 0, 0);
-        }
-    }
-
-}
-.rigth_button{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
+ -141,7 +142,7 body
     align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
-   transform: rotate(360deg);
    
+   transform: rotate(360deg);}
+
     svg{
         width: 55px;
-        height: 55px;
-        g{
-            fill: rgb(0, 0, 0);
-        }
-    }
-
+ -154,11 +155,28 body
 }
 .box{
     overflow: hidden;
@@ -159,7 +58,7 @@ body{
     
 }
 .botoes{
-   
+
     margin-top: -200px;
     z-index: 2;
     display: flex;
