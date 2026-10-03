@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nextage vortex- Loja de Games</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo-container">
+                <svg class="logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                     width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                     preserveAspectRatio="xMidYMid meet" aria-label="GameLock Logo">
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                       fill="#ffffff" stroke="none">
+                        <path d="M2380 4954 c-160 -18 -230 -29 -330 -51 -900 -197 -1601 -880 -1820
+                        -1775 -52 -213 -64 -322 -64 -568 0 -246 13 -358 64 -568 92 -375 262 -706
+                        515 -1000 382 -445 916 -731 1515 -814 123 -17 478 -16 600 1 698 96 1291 459
+                        1679 1026 207 303 338 637 397 1017 25 157 25 518 1 675 -82 521 -313 985
+                        -671 1347 -369 374 -830 607 -1363 691 -93 15 -448 28 -523 19z m-251 -1409
+                        c356 -70 538 -68 925 11 283 57 470 11 641 -161 101 -100 143 -178 189 -351
+                        19 -71 87 -316 152 -544 106 -377 117 -423 118 -500 0 -98 -19 -167 -69 -245
+                        -39 -60 -118 -136 -171 -163 -141 -72 -329 -68 -456 10 -20 13 -177 145 -348
+                        293 -171 149 -323 275 -338 282 -29 13 -367 18 -411 6 -13 -3 -164 -127 -335
+                        -276 -171 -148 -331 -283 -356 -299 -136 -88 -337 -90 -482 -5 -138 81 -242
+                        280 -225 429 3 26 74 294 158 595 173 626 181 646 299 764 86 87 163 134 270
+                        166 114 34 222 31 439 -12z"/>
+                        <path d="M1717 3208 c-13 -10 -17 -34 -19 -113 l-3 -100 -99 -3 c-55 -1 -106
+                        -8 -113 -14 -10 -8 -13 -48 -13 -153 0 -179 -3 -175 133 -175 l97 0 0 -99 c0
+                        -131 -1 -131 172 -131 167 0 168 1 168 135 l0 95 93 0 c133 0 131 -2 135 160
+                        5 180 5 180 -128 180 l-100 0 0 93 c0 138 2 137 -169 137 -94 0 -142 -4 -154
+                        -12z m205 -199 c4 -127 6 -129 135 -129 l93 0 0 -60 0 -60 -99 0 c-126 0 -131
+                        -5 -131 -132 l0 -88 -55 0 -55 0 0 93 c0 122 -3 125 -130 129 l-95 3 -3 58 -3
+                        57 96 0 c129 0 135 6 135 135 l0 95 54 0 54 0 4 -101z"/>
+                        <path d="M3191 3202 c-78 -42 -92 -144 -30 -208 35 -36 81 -51 126 -40 39 10
+                        90 67 98 109 20 106 -100 192 -194 139z"/>
+                        <path d="M2931 2943 c-46 -23 -71 -67 -71 -127 0 -43 4 -53 39 -87 35 -35 44
+                        -39 91 -39 47 0 56 4 91 39 35 34 39 44 39 87 0 61 -25 105 -73 127 -44 21
+                        -73 21 -116 0z"/>
+                        <path d="M3464 2946 c-70 -31 -99 -109 -65 -179 24 -50 65 -77 116 -77 138 0
+                        186 181 66 248 -44 25 -73 27 -117 8z"/>
+                        <path d="M3183 2670 c-74 -45 -84 -148 -20 -207 67 -60 154 -49 204 26 77 116
+                        -64 255 -184 181z"/>
+                    </g>
+                </svg>
+                <span class="logo-title">NextageVortex</span>
+            </div>
+
+            <div class="barra_pesquisa">
+                <input type="text" placeholder="Pesquise jogos, consoles e acessórios...">
+                <span class="divisor">|</span>
+                <button type="button" aria-label="Pesquisar">
+                    <img src="assets/images/lupa.png" alt="Pesquisar">
+                </button>
+            </div>
+
+            <div class="header-actions">
+                <a href="#" class="header-action-btn" aria-label="Minha Conta">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Entrar</span>
+                </a>
+                <a href="#" class="header-action-btn carrinho-btn" aria-label="Carrinho de Compras">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span>Carrinho</span>
+                    <span class="badge-cart">0</span>
+                </a>
+            </div>
+        </div>
+
+        <nav class="header-nav">
+            <div class="nav-container">
+                <ul class="nav-categories">
+                    <li class="nav-item destaque">
+                        <a href="#vitrine">
+                            <span class="nav-icon">🔥</span>
+                            <span>Lançamentos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#vitrine">
+                            <span class="nav-icon">🎮</span>
+                            <span>PlayStation</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#vitrine">
+                            <span class="nav-icon">🟩</span>
+                            <span>Xbox</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#vitrine">
+                            <span class="nav-icon">🔴</span>
+                            <span>Nintendo</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#vitrine">
+                            <span class="nav-icon">💻</span>
+                            <span>PC Gaming</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#galeria-container">
+                            <span class="nav-icon">⚡</span>
+                            <span>Ofertas Especiais</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <span class="nav-icon">🎧</span>
+                            <span>Acessórios</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <span class="nav-icon">🏆</span>
+                            <span>Mais Vendidos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner Rotativo de Destaque / Propaganda -->
+        <section class="banner-rotativo-section" id="banner-propaganda">
+            <div class="banner-slider">
+                <div class="banner-slides" id="banner-slides">
+                    <div class="banner-slide active">
+                        <img src="assets/galeria_imagens/1.png" alt="Propaganda 1">
+                        <div class="banner-overlay">
+                            <span class="banner-tag">Mega Promoção</span>
+                            <h2>Lançamentos Imperdíveis</h2>
+                            <p>Garanta os jogos mais esperados do ano com até 50% OFF.</p>
+                            <a href="#vitrine" class="banner-cta">Conferir Ofertas</a>
+                        </div>
+                    </div>
+                    <div class="banner-slide">
+                        <img src="assets/galeria_imagens/2.png" alt="Propaganda 2">
+                        <div class="banner-overlay">
+                            <span class="banner-tag">Exclusivo GameLock</span>
+                            <h2>Os Melhores do PlayStation & Xbox</h2>
+                            <p>Títulos exclusivos em mídia digital e física com pronta entrega.</p>
+                            <a href="#vitrine" class="banner-cta">Explorar Agora</a>
+                        </div>
+                    </div>
+                    <div class="banner-slide">
+                        <img src="assets/galeria_imagens/3.png" alt="Propaganda 3">
+                        <div class="banner-overlay">
+                            <span class="banner-tag">Oferta Relâmpago</span>
+                            <h2>Semana Gamer PC & Console</h2>
+                            <p>Preços especiais válidos por tempo limitado. Aproveite o frete grátis.</p>
+                            <a href="#vitrine" class="banner-cta">Aproveitar Descontos</a>
+                        </div>
+                    </div>
+                    <div class="banner-slide">
+                        <img src="assets/galeria_imagens/4.png" alt="Propaganda 4">
+                        <div class="banner-overlay">
+                            <span class="banner-tag">Destaque da Semana</span>
+                            <h2>Aventuras Épicas te Esperam</h2>
+                            <p>Descubra novas histórias e mundos incríveis com desconto especial.</p>
+                            <a href="#vitrine" class="banner-cta">Ver Títulos</a>
+                        </div>
+                    </div>
+                    <div class="banner-slide">
+                        <img src="assets/galeria_imagens/5.png" alt="Propaganda 5">
+                        <div class="banner-overlay">
+                            <span class="banner-tag">Top Vendas</span>
+                            <h2>Jogos Mais Avaliados</h2>
+                            <p>Os títulos favoritos da comunidade com condições facilitadas.</p>
+                            <a href="#vitrine" class="banner-cta">Comprar Já</a>
+                        </div>
+                    </div>
+                    <div class="banner-slide">
+                        <img src="assets/galeria_imagens/6.png" alt="Propaganda 6">
+                        <div class="banner-overlay">
+                            <span class="banner-tag">Super Descontos</span>
+                            <h2>Coleções Completas</h2>
+                            <p>Edições Deluxe e pacotes de expansão com vantagens exclusivas.</p>
+                            <a href="#vitrine" class="banner-cta">Ver Coleção</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botões de Navegação do Banner -->
+                <button type="button" class="banner-btn banner-prev" onclick="banner_anterior()" aria-label="Banner anterior">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button type="button" class="banner-btn banner-next" onclick="banner_proximo()" aria-label="Próximo banner">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+
+                <!-- Indicadores do Banner (Dots) -->
+                <div class="banner-indicadores" id="banner-indicadores">
+                    <span class="b-dot active" onclick="ir_para_slide_banner(0)"></span>
+                    <span class="b-dot" onclick="ir_para_slide_banner(1)"></span>
+                    <span class="b-dot" onclick="ir_para_slide_banner(2)"></span>
+                    <span class="b-dot" onclick="ir_para_slide_banner(3)"></span>
+                    <span class="b-dot" onclick="ir_para_slide_banner(4)"></span>
+                    <span class="b-dot" onclick="ir_para_slide_banner(5)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="box">
+                <div class="vitrine_produtos" id="vitrine">
+                    <article class="card">
+                        <span class="badge-card">visto recentemente</span>
+                        <img src="assets/images/red_dead_redemption.jpg" alt="Red Dead Redemption">
+                        <div class="nome_produto"><a href="#">Red Dead Redemption para Xbox Series X/S</a></div>
+                        <div class="price"><span>R$ 65,00</span></div>
+                        <div class="frete"><span>frete grátis</span></div>
+                    </article>
+
+                    <article class="card">
+                        <span class="badge-card">recomendações</span>
+                        <img src="assets/images/homem_aranha.webp" alt="Marvel Homem-Aranha Miles Morales">
+                        <div class="nome_produto"><a href="#">Marvel Homem-Aranha: Miles Morales PS5</a></div>
+                        <div class="price"><span>R$ 30,49</span></div>
+                        <div class="frete"><span>frete grátis</span></div>
+                    </article>
+
+                    <article class="card">
+                        <span class="badge-card">recomendações</span>
+                        <img src="assets/images/the_last_of_us.webp" alt="The Last of Us">
+                        <div class="nome_produto"><a href="#">The Last of Us Part I</a></div>
+                        <div class="price"><span>R$ 16,99</span></div>
+                        <div class="frete"><span>frete grátis</span></div>
+                    </article>
+
+                    <article class="card">
+                        <span class="badge-card">recomendações</span>
+                        <img src="assets/images/mortal_kombat.webp" alt="Mortal Kombat Legacy Kollection">
+                        <div class="nome_produto"><a href="#">Mortal Kombat: Legacy Kollection - Xbox / PS5</a></div>
+                        <div class="price"><span>R$ 65,00</span></div>
+                        <div class="frete"><span></span></div>
+                    </article>
+
+                    <article class="card">
+                        <span class="badge-card">recomendações</span>
+                        <img src="assets/images/phasmophobia.webp" alt="Phasmophobia">
+                        <div class="nome_produto"><a href="#">Phasmophobia PC / Console</a></div>
+                        <div class="price"><span>R$ 17,00</span></div>
+                        <div class="frete"><span>frete grátis</span></div>
+                    </article>
+
+                    <article class="card">
+                        <span class="badge-card">recomendações</span>
+                        <img src="assets/images/days_gone.webp" alt="Days Gone PS4">
+                        <div class="nome_produto"><a href="#">Days Gone Jogo PS4 / PS5</a></div>
+                        <div class="price"><span>R$ 55,90</span></div>
+                        <div class="frete"><span>frete grátis</span></div>
+                    </article>
+
+                    <article class="card">
+                        <span class="badge-card">recomendações</span>
+                        <img src="assets/images/fifa_19.webp" alt="FIFA 19">
+                        <div class="nome_produto"><a href="#">Electronic Arts Jogo PS4 FIFA 19</a></div>
+                        <div class="price"><span>R$ 40,50</span></div>
+                        <div class="frete"><span></span></div>
+                    </article>
+
+                    <article class="card">
+                        <span class="badge-card">recomendações</span>
+                        <img src="assets/images/shadow_of_the_colossus.webp" alt="Shadow of The Colossus">
+                        <div class="nome_produto"><a href="#">Jogo Shadow of The Colossus PS4</a></div>
+                        <div class="price"><span>R$ 34,00</span></div>
+                        <div class="frete"><span>frete grátis</span></div>
+                    </article>
+
+                    <article class="card">
+                        <span class="badge-card">recomendações</span>
+                        <img src="assets/images/god_of_war.webp" alt="God of War">
+                        <div class="nome_produto"><a href="#">God of War Ragnarök / PlayStation</a></div>
+                        <div class="price"><span>R$ 35,00</span></div>
+                        <div class="frete"><span>frete grátis</span></div>
+                    </article>
+
+                    <article class="card">
+                        <span class="badge-card">recomendações</span>
+                        <img src="assets/images/reanimal.jpg" alt="Reanimal Deluxe Edition">
+                        <div class="nome_produto"><a href="#">Reanimal Deluxe Edition PC</a></div>
+                        <div class="price"><span>R$ 115,00</span></div>
+                        <div class="frete"><span>frete grátis</span></div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="botoes">
+                <button type="button" class="nav-btn left_button" id="esquerda" onclick="arrasta_esquerda()" aria-label="Voltar itens">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+
+                <button type="button" class="nav-btn rigth_button" id="direita" onclick="arrasta_direita()" aria-label="Avançar itens">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="anuncio">
+            <div class="anuncio-conteudo">
+                <h2>Ofertas Especiais de Lançamento</h2>
+                <p>Aproveite até 70% de desconto em títulos selecionados e frete grátis em toda a loja.</p>
+            </div>
+
+            <div class="galeria-wrapper">
+                <button type="button" class="galeria-btn btn-prev" id="galeria-prev" onclick="galeria_anterior()" aria-label="Imagens anteriores">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+
+                <div class="galeria-container" id="galeria-container">
+                    <div class="galeria-track" id="galeria-track">
+                        <div class="galeria-item">
+                            <img src="assets/galeria_imagens/1.png" alt="Oferta Especial 1">
+                        </div>
+                        <div class="galeria-item">
+                            <img src="assets/galeria_imagens/2.png" alt="Oferta Especial 2">
+                        </div>
+                        <div class="galeria-item">
+                            <img src="assets/galeria_imagens/3.png" alt="Oferta Especial 3">
+                        </div>
+                        <div class="galeria-item">
+                            <img src="assets/galeria_imagens/4.png" alt="Oferta Especial 4">
+                        </div>
+                        <div class="galeria-item">
+                            <img src="assets/galeria_imagens/5.png" alt="Oferta Especial 5">
+                        </div>
+                        <div class="galeria-item">
+                            <img src="assets/galeria_imagens/6.png" alt="Oferta Especial 6">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="galeria-btn btn-next" id="galeria-next" onclick="galeria_proximo()" aria-label="Próximas imagens">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="galeria-indicadores" id="galeria-indicadores">
+                <span class="dot active" onclick="ir_para_pagina_galeria(0)"></span>
+                <span class="dot" onclick="ir_para_pagina_galeria(1)"></span>
+            </div>
+        </section>
+
+        <section class="marcas">
+
+           
+            <div class="metade_1">
+                <img class="homemaranha" src="/5ayReKkz8RaBVuTvrxgA3rvh.avif" alt="">
+                <div>
+                    <img class="insomniac" src="/Insomniac_Games_logo_antigo.png" alt="">
+                    <h3 class="palavras">Os melhores jogos disponiveis para melhores experiencias</h3>
+                    <p>garanta o seu</p>
+                </div>
+            </div>
+
+            <div class="metade_2">
+                <img class="amongus" src="/758ab0b61205081da2466386940752c70e0e5ea43bd39e8b9b13eaa455c69b7e.avif">
+                <div>
+                    <img class="inners" src="/Innersloth_logo (1).jpg" alt="">
+                     <h3 class="palavras">Os melhores jogos disponiveis para melhores experiencias</h3>
+                    <p>garanta o seu</p>
+                </div>
+            </div>
+           
+            
+
+        </section>
+        <div class="isolado">
+            <a href="/produtos_page/headset.html" class="unico">
+                <div>
+                <div class="produto">
+                    <div class="cartao">
+                        <div><h3>ofertas do dia</h3></div><br>
+                        <div><img class="controle" src="/controle unico.png" alt=""></div><br>
+                        <div><p>Controle DualSense Harry Potter Hogwarts Legacy Edition PS5</p></div><br>
+                        <div><h2>R$4.480</h2></div><br>
+                        <div><h4>frete gratis</h4></div><br>
+                    </div>
+                </div>
+                </div>
+            </a>
+            <div class="carrosel">
+               
+                <div class="produto2">
+                     <div><h3>ofertas do dia</h3></div><br>
+                    <div><img class="controle" src="/D_NQ_NP_855563-MLB104996389754_012026-O-controle-ps5-dualsense-paddles-alta-performance.webp" alt=""></div><br>
+                    <div><p>Controle DualSense Harry Potter Hogwarts Legacy Edition PS5</p></div><br>
+                    <div><h2>R$799.33</h2></div><br>
+                    <div><h4>frete gratis</h4></div><br>
+                </div>
+                <div class="produto3">
+                     <div><h3>ofertas do dia</h3></div>
+                    <div><img class="controle" src="/Takai-Copia.webp" alt=""></div><br>
+                    <div><p>Controle DualSense Harry Potter Hogwarts Legacy Edition PS5</p></div><br>
+                    <div><h2>R$869.99</h2></div><br>
+                    <div><h4>frete gratis</h4></div><br>
+                </div>
+                <div class="produto4">
+                     <div><h3>ofertas do dia</h3></div>
+                    <div><img class="controle" src="/RUBRO_NEGRO.webp" alt=""></div><br>
+                    <div><p>Controle DualSense Harry Potter Hogwarts Legacy Edition PS5</p></div><br>
+                    <div><h2>R$669.99</h2></div><br>
+                    <div><h4>frete gratis</h4></div><br>
+                </div>
+                <div class="produto5">
+                     <div><h3>ofertas do dia</h3></div><br>
+                    <div><img class="controle" src="/4483345900_1SZ.webp" alt=""></div><br>
+                    <div><p>Controle DualSense Harry Potter Hogwarts Legacy Edition PS5</p></div><br>
+                    <div><h2>R$459.00</h2></div><br>
+                    <div><h4>frete gratis</h4></div><br>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col footer-about">
+                <div class="footer-logo">
+                    <svg class="logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                         width="40pt" height="40pt" viewBox="0 0 512.000000 512.000000"
+                         preserveAspectRatio="xMidYMid meet" aria-label="GameLock Logo">
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                           fill="#ffb703" stroke="none">
+                            <path d="M2380 4954 c-160 -18 -230 -29 -330 -51 -900 -197 -1601 -880 -1820
+                            -1775 -52 -213 -64 -322 -64 -568 0 -246 13 -358 64 -568 92 -375 262 -706
+                            515 -1000 382 -445 916 -731 1515 -814 123 -17 478 -16 600 1 698 96 1291 459
+                            1679 1026 207 303 338 637 397 1017 25 157 25 518 1 675 -82 521 -313 985
+                            -671 1347 -369 374 -830 607 -1363 691 -93 15 -448 28 -523 19z m-251 -1409
+                            c356 -70 538 -68 925 11 283 57 470 11 641 -161 101 -100 143 -178 189 -351
+                            19 -71 87 -316 152 -544 106 -377 117 -423 118 -500 0 -98 -19 -167 -69 -245
+                            -39 -60 -118 -136 -171 -163 -141 -72 -329 -68 -456 10 -20 13 -177 145 -348
+                            293 -171 149 -323 275 -338 282 -29 13 -367 18 -411 6 -13 -3 -164 -127 -335
+                            -276 -171 -148 -331 -283 -356 -299 -136 -88 -337 -90 -482 -5 -138 81 -242
+                            280 -225 429 3 26 74 294 158 595 173 626 181 646 299 764 86 87 163 134 270
+                            166 114 34 222 31 439 -12z"/>
+                        </g>
+                    </svg>
+                    <span class="footer-brand">GameLock</span>
+                </div>
+                <p class="footer-desc">
+                    O seu universo gamer em um só lugar. Os melhores jogos, lançamentos exclusivos e ofertas imperdíveis para todas as plataformas.
+                </p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="Discord" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Categorias</h3>
+                <ul class="footer-links">
+                    <li><a href="#">PlayStation 5 & PS4</a></li>
+                    <li><a href="#">Xbox Series X|S</a></li>
+                    <li><a href="#">Nintendo Switch</a></li>
+                    <li><a href="#">PC Gaming</a></li>
+                    <li><a href="#">Lançamentos</a></li>
+                    <li><a href="#">Acessórios & Controles</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Suporte & Ajuda</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Central de Atendimento</a></li>
+                    <li><a href="#">Rastrear meu Pedido</a></li>
+                    <li><a href="#">Política de Trocas</a></li>
+                    <li><a href="#">Prazos de Entrega</a></li>
+                    <li><a href="#">Termos e Condições</a></li>
+                    <li><a href="#">Privacidade & Segurança</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h3 class="footer-title">Receba Novidades</h3>
+                <p>Cadastre-se para receber ofertas exclusivas e cupons de desconto no seu e-mail.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Inscrição realizada com sucesso!');">
+                    <input type="email" placeholder="Seu melhor e-mail..." required>
+                    <button type="submit">Inscrever</button>
+                </form>
+                <div class="payment-methods">
+                    <span class="pay-badge">PIX</span>
+                    <span class="pay-badge">Cartão de Crédito</span>
+                    <span class="pay-badge">Boleto</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 GameLock Shop. Todos os direitos reservados.</p>
+                <p class="footer-crafted">Feito com paixão para todos os gamers 🎮</p>
+            </div>
+        </div>
+    </footer>
+     
+    <script src="js/main.js"></script>
+</body>
+</html>
